@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "screenhot": {
+      "commandName": "Project",
+      "commandLineArgs": "https://p30download.ir/"
+    }
+  }
+}
