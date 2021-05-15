@@ -30,6 +30,7 @@ namespace screenhot
             {
                 string siteUrl = args[0];
                 Console.WriteLine(siteUrl);
+                var ct = new CancellationTokenSource();
 
                 try
                 {
@@ -59,7 +60,6 @@ namespace screenhot
                     Console.WriteLine("\n\n\n\n\n");
                     Console.Write("Taking shots be patience! ");
 
-                    var ct = new CancellationTokenSource();
 
                     var token = ct.Token;
                     var loadTask = Task.Factory.StartNew(() =>
@@ -71,7 +71,6 @@ namespace screenhot
                         }
 
                     }, ct.Token);
-
                     StreamReader file = new StreamReader("sizes.txt");
                     string line;
                     while ((line = file.ReadLine()) != null)
@@ -104,6 +103,8 @@ namespace screenhot
 
                 catch (Exception)
                 {
+                    ct.Cancel();
+
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\n\n\nSome Error acquired during process \nmake sure you have fast internet connection and also make sure you have entered a valid url and try again");
                     Console.ResetColor();
