@@ -1,4 +1,4 @@
 # screenhot
 screenshots from your website on different screen sizes 
 
-![]('animation.gif')
+![demo of application](animation.gif)
