@@ -25,6 +25,5 @@ take fullpage screenshots from your website in diffrente sizes
 
 
 ### **Usage**
-
-​	`dotnet run https://www.google.com/`
+`dotnet run https://www.google.com/`
 
