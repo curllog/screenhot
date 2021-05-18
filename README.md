@@ -4,6 +4,8 @@ take fullpage screenshots from your website in diffrente sizes
 
 ## Take full-page screenshots in different sizes from your websites.
 
+#### ***<u>you need to have firefox installed</u>***
+
 
 
 - download and install .net 5 sdk
